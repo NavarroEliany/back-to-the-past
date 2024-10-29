@@ -1,38 +1,48 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    min-height: 100vh;
+   
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+    background-color: #ff2222;
+    color: #000000;
+    padding: 30px;
     text-align: center;
+}
+.main-header {
+    display:flex ; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.logo {
+    width: 60px; 
+    height: auto; 
+    border-radius: 5px;
+  
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline-block; 
+    margin-right: 20px;
+  
+    
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -40,12 +50,69 @@ main {
     padding: 20px;
 }
 
+.main-content {
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  .main-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .purpose-section, .about-section, .miembros {
+    margin-bottom: 10px;
+  }
+  
+  .persona {
+    margin: 10px;
+    text-align: center
+  }
+  
+  .persona img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+     
+  }
+  
+  .purpose-section p {
+    color: #010101;
+  }
+ 
 footer {
-    background-color: #333;
-    color: white;
+
+    background-color: #ff2222;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    margin: auto;
+  }
+
+  .main-Footer {
+    width: 80%; 
+    text-align: center;
+  }
+
+.contact {
+    margin: 10px;
+    display: flex;
+    display: inline-block;
+    
+}
+
+.contact > p {
+    color: #000000;
+    display: inline-block;
+
+}
+
+.contact>img{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    border-radius: 30px;
 }
